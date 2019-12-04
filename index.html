@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IEEECS | Selections</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,600,700"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <link rel="stylesheet" href="/node_modules/sal.js/dist/sal.css "> -->
+    <link rel="icon" href="images/IEEE-CS-New.png" />
+    <link rel="stylesheet" href="stylesheets/register.css" />
+    <!-- <link rel="stylesheet" href="stylesheets/login.css" /> -->
+    <link rel="stylesheet" href="stylesheets/clock.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  </head>
+
+  <body >
+
+    <div class="backBlack">
+      <div class="backWhite">
+        <div id="cover"></div>
+        <script>
+          $(window).on("load", function() {
+            $("#cover").fadeOut(200);
+          });
+        </script>
+
+        <div class="container">
+          <div class="row">
+            <div class="col12 top">
+              <img src="images/IEEE-CS-New.png" alt="logo" class="logo" />
+            </div>
+          </div>
+
+          <div class="clockContain">
+            <div id="clockText">
+              <h2><strong>IEEE Computer Society</strong></h2>
+              <h3>Core Commitee Selections</h3>
+            </div>
+            <div id="clockdiv">
+              <div>
+                <span class="days" id="day"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours" id="hour"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes" id="minute"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds" id="second"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="faq">
+            <h2 id="faqTitle">FAQ</h2>
+            <button class="accordion">Question 1</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">Question 2</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+
+            <button class="accordion">Question 3</button>
+            <div class="panel">
+              <p>Lorem ipsum...</p>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+</div>
+      <div class="socialIcons">
+        <a href="">
+          <img src="images/facebook-logo.svg" alt="">
+        </a>
+        <a href="">
+          <img src="images/instagram.svg" alt="">
+        </a>
+        <a href="">
+          <img src="images/linkedin-logo.svg" alt="">
+        </a>
+      </div>
+
+<script>
+
+var deadline = new Date("dec 6, 2019 23:59:59").getTime();
+
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+var t = deadline - now;
+var days = Math.floor(t / (1000 * 60 * 60 * 24));
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((t % (1000 * 60)) / 1000);
+document.getElementById("day").innerHTML =days ;
+document.getElementById("hour").innerHTML =hours;
+document.getElementById("minute").innerHTML = minutes;
+document.getElementById("second").innerHTML =seconds;
+if (t < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "TIME UP";
+        document.getElementById("day").innerHTML ='0';
+        document.getElementById("hour").innerHTML ='0';
+        document.getElementById("minute").innerHTML ='0' ;
+        document.getElementById("second").innerHTML = '0'; }
+}, 1000);
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "block";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
