@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -24,7 +26,7 @@
 
   </head>
 
-  <body >
+  <body>
 
     <div class="backBlack">
       <div class="backWhite">
@@ -37,31 +39,31 @@
 
         <div class="container">
           <div class="row">
-            <div class="col12 top">
-              <img src="images/IEEE-CS-New.png" alt="logo" class="logo" />
+            <div class="col12 logoContain">
+              <img src="images/IEEE-CS-New.png" alt="logo" id="logo" />
             </div>
           </div>
 
           <div class="clockContain">
             <div id="clockText">
               <h2><strong>IEEE Computer Society</strong></h2>
-              <h3>Core Commitee Selections</h3>
+              <h3><strong>Core Commitee Selections</strong></h3>
             </div>
             <div id="clockdiv">
-              <div>
-                <span class="days" id="day"></span>
+              <div id="dayBox">
+                <span class="days timeNo" id="day"></span>
                 <div class="smalltext">Days</div>
               </div>
-              <div>
-                <span class="hours" id="hour"></span>
+              <div id="hourBox">
+                <span class="hours timeNo" id="hour"></span>
                 <div class="smalltext">Hours</div>
               </div>
-              <div>
-                <span class="minutes" id="minute"></span>
+              <div id="minuteBox">
+                <span class="minutes timeNo" id="minute"></span>
                 <div class="smalltext">Minutes</div>
               </div>
-              <div>
-                <span class="seconds" id="second"></span>
+              <div id="secondBox">
+                <span class="seconds timeNo" id="second"></span>
                 <div class="smalltext">Seconds</div>
               </div>
             </div>
@@ -100,7 +102,26 @@
           <img src="images/linkedin-logo.svg" alt="">
         </a>
       </div>
-
+      <div class="domains">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 domSpc" id="design">
+            <img src="images/pen.svg" alt="" class="domImg">
+            <h1>Design</h1>
+          </div>
+          <div class="col-lg-6 col-md-6 domSpc" id="technical">
+            <img src="images/technical-support.svg" alt="" class="domImg">
+            <h1>Technical</h1>
+          </div>
+          <div class="col-lg-6 col-md-6 domSpc" id="management">
+            <img src="images/project-management.svg" alt="" class="domImg">
+            <h1>Management</h1>
+          </div>
+          <div class="col-lg-6 col-md-6 domSpc" id="documentation">
+            <img src="images/file.svg" alt="" class="domImg">
+            <h1>Documentation</h1>
+          </div>
+        </div>
+      </div>
 <script>
 
 var deadline = new Date("dec 6, 2019 23:59:59").getTime();

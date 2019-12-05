@@ -14,7 +14,7 @@ body {
 }
 
 /* For Tablets/Phones */
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
   .backBlack{
     clip-path: polygon(79% 0%, 71% 0%, 37% 0%, 0% 0%, 0% 25%, 0% 47%, 0% 81%, 0% 100%, 33% 100%, 57% 100%, 79% 100%, 100% 100%, 87% 39%, 84% 24%);
     background-color: black;
@@ -28,9 +28,28 @@ background-color: white;
     height: 100vh;
     width:100%;
   }
+} */
+/*for Mobiles */
+@media screen and (max-width: 560px) {
+  body {
+    background-color: #ffffff!important;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 100;
+
+  }
 }
-/* For Laptops */
-@media screen and (min-width: 780px) {
+/* For Tablets/Laptops */
+@media screen and (min-width: 560px) {
+  body {
+    background-color: #ffffff!important;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 100;
+
+  /* }
   .backBlack{
     clip-path: polygon(0% 0%, 76% 0, 100% 53%, 77% 100%, 0% 100%);
     background-color: black;
@@ -43,7 +62,7 @@ background-color: white;
     background-color: white;
     height: 100vh;
     width:100%;
-  }
+  } */
 }
 
 form {
@@ -77,19 +96,13 @@ a {
 
 /* class CSS */
 
-.top {
-  height: 100px;
+.logoContain {
+  height: 63px;
   margin: 0.5em;
-  padding-top: 3rem;
   flex-direction: row;
   justify-content: center;
 }
 
-.logo {
-  height: 75%;
-  margin: auto;
-  float: left;
-}
 
 .form-heading {
   text-align: center;

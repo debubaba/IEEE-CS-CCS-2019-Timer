@@ -1,6 +1,12 @@
 body{
   font-family: sans-serif;
   font-weight: 100;
+  position: fixed;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   width: 100%;
+
+   font-family: 'Raleway', sans-serif;
 }
 h1{
   font-weight: 100;
@@ -12,25 +18,23 @@ h1{
 @media screen and (max-width: 560px) {
   .clockContain{
     height: 12rem;
-    padding-top: 0rem;
-    border-bottom: solid 2px orange;
-    width: 28rem;
-    margin-left: -3rem;
   }
   #clockText h2{
-    font-weight: 100;
-    font-size: 2rem;
+    font-weight: 200;
+    font-size: 3rem;
     margin-left: 1rem;
     margin-bottom: 16px;
-
+    margin-top: -1.2rem;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     }
 
   #clockText h3{
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-left: 1rem;
     font-family: 'Raleway', sans-serif;
+    text-align: center;
   }
   #clockdiv{
      font-family: sans-serif;
@@ -39,18 +43,77 @@ h1{
      font-weight: 100;
      text-align: center;
      background: rgba(255, 255, 255, 0.2);
-     font-size: 1rem;
+     font-size: 3rem;
+     position: absolute;
+     bottom: 0rem;
+     right: -2rem;
+     overflow: visible;
  }
+
+ #dayBox {
+   text-align: center;
+   background-color: #000000!important;
+   color: #ffffff!important;
+   margin-left: -25px;
+   margin-right: -12px;
+   width: 50%;
+   height: 100%;
+ }
+
+ #hourBox {
+   text-align: center;
+     background-color: #fc9003!important;
+   color: #000000!important;
+   width: 50%;
+   height: 100%;
+ }
+ #minuteBox {
+   text-align: center;
+   background-color: #000000!important;
+   color: #ffffff!important;
+   margin-left: -25px;
+   margin-right: -12px;
+   width: 50%;
+   height: 100%;
+ }
+
+ #secondBox {
+   text-align: center;
+     background-color: #fc9003!important;
+   color: #000000!important;
+   width: 50%;
+   height: 100%;
+ }
+
+.timeNo{
+  font-size: 8rem;
+}
+.smalltext{
+  font-size: 4rem;
+}
+
+
+#logo {
+  height: 75%;
+  margin: auto;
+  float: left;
+  height: 4rem;
+  margin-top: 2rem;
+}
+
 }
 /* For Tablets */
-@media screen and (min-width: 560px) and (max-width: 780px) {
+/* @media screen and (min-width: 560px) and (max-width: 780px) {
   .clockContain{
     height: 33rem;
     padding-top: 7rem;
-    border-bottom: solid 2px orange;
     width: 48rem;
     margin-left: 0rem;
   }
+  #clockText{
+    border-left: solid 3px orange;
+  }
+
   #clockText h2{
     font-weight: 100;
     font-size: 4rem;
@@ -75,15 +138,18 @@ h1{
      background: rgba(255, 255, 255, 0.2);
      font-size: 3rem;
  }
-}
-
-/* For Laptops */
-@media screen and (min-width: 780px) {
+} */
+/* For Tablets */
+@media screen and (min-width: 560px) and (max-width: 780px) {
   .clockContain{
     height: auto;
-    padding-top: 7rem;
-    border-bottom: solid 2px orange;
+    padding-top: 1rem;
     width: 53%;
+  }
+
+
+  #clockText{
+    border-left: solid 10px orange;
   }
   #clockText h2{
     font-weight: 100;
@@ -109,7 +175,197 @@ h1{
      text-align: center;
      background: rgba(255, 255, 255, 0.2);
      font-size: 3rem;
+     width: 51%;
+     position: absolute;
+     right: -3rem;
+     bottom: 0rem;
+     max-height: 32rem;
  }
+ #dayBox {
+   text-align: center;
+   background-color: #fc9003!important;
+   color: #ffffff!important;
+   margin-left: -25px;
+   margin-right: -15px;
+   width: 50%;
+   height: 100%;
+   padding-top: 6.8rem;
+   padding-left: 6rem;
+   padding-right: 2rem;
+   padding-bottom: 0rem;
+ }
+
+ #hourBox {
+   text-align: center;
+     background-color: #fc9003!important;
+   color: #000000!important;
+   width: 50%;
+   height: 100%;
+   padding-top: 6.8rem;
+   padding-left: 2rem;
+   padding-right: 6rem;
+   padding-bottom: 0rem;
+ }
+ #minuteBox {
+   text-align: center;
+   background-color: #fc9003!important;
+   color: #ffffff!important;
+   margin-left: -25px;
+   margin-right: -15px;
+   width: 50%;
+   height: 100%;
+
+   padding-top: 0rem;
+   padding-left: 6rem;
+   padding-right: 2rem;
+   padding-bottom: 6.2rem;
+ }
+
+ #secondBox {
+   text-align: center;
+     background-color: #fc9003!important;
+   color: #000000!important;
+   width: 50%;
+   height: 100%;
+
+   padding-top: 0rem;
+   padding-left: 2rem;
+   padding-right: 6rem;
+   padding-bottom: 6.20rem;
+ }
+
+ .timeNo{
+   font-size: 4rem;
+font-family: 'Montserrat', sans-serif;
+ }
+ .smalltext{
+   font-size: 3rem;
+font-family: 'Montserrat', sans-serif;
+ }
+
+
+ #logo {
+   height: 75%;
+   margin: auto;
+   float: left;
+   height: 4rem;
+   margin-top: 2rem;
+ }
+
+}
+/* For Laptops */
+@media screen and (min-width: 780px) {
+  .clockContain{
+    height: auto;
+    padding-top: 1rem;
+    width: 53%;
+  }
+
+
+  #clockText{
+    border-left: solid 10px orange;
+  }
+  #clockText h2{
+    font-weight: 100;
+    font-size: 5rem;
+    margin-left: 3rem;
+    margin-bottom: 16px;
+
+    font-family: 'Raleway', sans-serif;
+    }
+
+  #clockText h3{
+    font-weight: 100;
+    font-size: 3rem;
+    margin-left: 3rem;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  #clockdiv{
+     font-family: sans-serif;
+     color: black;
+     display: inline-block;
+     font-weight: 100;
+     text-align: center;
+     background: rgba(255, 255, 255, 0.2);
+     font-size: 3rem;
+     width: 51%;
+     position: absolute;
+     right: -3rem;
+     bottom: 0rem;
+     max-height: 32rem;
+ }
+ #dayBox {
+   text-align: center;
+   background-color: #fc9003!important;
+   color: #ffffff!important;
+   margin-left: -25px;
+   margin-right: -15px;
+   width: 50%;
+   height: 100%;
+   padding-top: 6.8rem;
+   padding-left: 11rem;
+   padding-right: 0rem;
+   padding-bottom: 0rem;
+ }
+
+ #hourBox {
+   text-align: center;
+     background-color: #fc9003!important;
+   color: #000000!important;
+   width: 50%;
+   height: 100%;
+   padding-top: 6.8rem;
+   padding-left: 0rem;
+   padding-right: 14rem;
+   padding-bottom: 0rem;
+ }
+ #minuteBox {
+   text-align: center;
+   background-color: #fc9003!important;
+   color: #ffffff!important;
+   margin-left: -25px;
+   margin-right: -15px;
+   width: 50%;
+   height: 100%;
+
+   padding-top: 0rem;
+   padding-left: 11rem;
+   padding-right: 0rem;
+   padding-bottom: 6.2rem;
+ }
+
+ #secondBox {
+   text-align: center;
+     background-color: #fc9003!important;
+   color: #000000!important;
+   width: 50%;
+   height: 100%;
+
+   padding-top: 0rem;
+   padding-left: 0rem;
+   padding-right: 14rem;
+   padding-bottom: 6.20rem;
+ }
+
+ .timeNo{
+   font-size: 4rem;
+font-family: 'Montserrat', sans-serif;
+ }
+ .smalltext{
+   font-size: 3rem;
+font-family: 'Montserrat', sans-serif;
+ }
+
+
+ #logo {
+   height: 75%;
+   margin: auto;
+   float: left;
+   height: 4rem;
+   margin-top: 2rem;
+ }
+
 }
 
 .timerTag{
@@ -121,20 +377,15 @@ h1{
 
 
 #clockdiv > div{
-    padding: 10px;
     border-radius: 3px;
     display: inline-block;
 }
-#clockdiv div > span{
+/* #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
     background: #fc9003!important
     display: inline-block;
-}
-smalltext{
-    padding-top: 5px;
-    font-size: 16px;
-}
+} */
 
 .faq{
   background: rgba(3, 3, 3, 0);
@@ -209,8 +460,8 @@ button:focus{
 @media screen and (max-width: 560px) {
   .socialIcons{
     position: absolute;
-    bottom: 1rem;
-    right: 9rem;
+    bottom: 35rem;
+    right: 1rem;
     overflow: visible;
 
   }
@@ -222,11 +473,11 @@ button:focus{
 
 
 /* For Tablets */
-@media screen and (min-width: 560px) and (max-width: 780px) {
+@media screen and (min-width: 560px) {
   .socialIcons{
     position: absolute;
-    bottom: 1rem;
-    left: 44rem;
+    bottom: 34rem;
+    right: 2rem;
     overflow: visible;
 
   }
@@ -236,17 +487,117 @@ button:focus{
   }
 }
 
-/* For Laptops */
-@media screen and (min-width: 780px) {
-  .socialIcons{
+/*For Mobiles*/
+@media screen and (max-width: 560px){
+  .domains{
+    display: none;
+  }
+}
+/*ForTablets*/
+@media screen and (min-width: 560px) and (max-width: 780px){
+  .domains{
+    width: 53%;
+    height: 31.3%;
+    background-color: black;
+    color: white;
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    overflow: visible;
-
+    left: -0.5rem;
+    bottom: 0rem;
+    text-align: center;
+    font-size: 3rem!important;
   }
 
-  .socialIcons a img{
-    max-Height: 3.5rem;
+  .row .domSpc{
+    float:left;
   }
+
+  .domSpc{
+    height: 15.2rem!important;
+ font-family: 'Montserrat', sans-serif;
+  }
+
+  .domSpc h1{
+    margin-top: 0rem;
+
+    font-size: 2rem!important;
+  }
+
+  .domImg{
+    height: 8rem;
+    padding: 2rem;
+  }
+
+  #design{
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 5rem;
+    width: fit-content;
+  }
+
+    #technical{
+      padding-top: 5rem;
+      padding-left: 4rem;
+      padding-right: 5rem;
+      width: fit-content;
+    }
+      #management{
+        padding-bottom: 1rem;
+        padding-left: 7rem;
+        width: fit-content;
+      }
+        #documentation{
+          padding-bottom: 1rem;
+          padding-right: 0rem;
+          width: fit-content;
+        }
+}
+
+/*For Laptops*/
+@media screen and (min-width: 780px){
+  .domains{
+    width: 52%;
+    height: 42.4%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    left: -0.5rem;
+    bottom: 0rem;
+    text-align: center;
+    font-size: 3rem!important;
+    max-height: 32rem;
+  }
+
+  .domSpc{
+    height: 15.2rem!important;
+ font-family: 'Montserrat', sans-serif;
+  }
+
+  .domSpc h1{
+    margin-top: 0rem;
+
+    font-size: 2.5rem!important;
+  }
+
+  .domImg{
+    height: 8rem;
+    padding: 2rem;
+  }
+
+  #design{
+    padding-top: 6rem;
+    padding-left: 10rem;
+  }
+
+    #technical{
+      padding-top: 6rem;
+      padding-right: 10rem;
+    }
+      #management{
+        padding-bottom: 1rem;
+        padding-left: 10rem;
+      }
+        #documentation{
+          padding-bottom: 1rem;
+          padding-right: 10rem;
+        }
 }
