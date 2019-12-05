@@ -179,7 +179,7 @@ h1{
      position: absolute;
      right: -3rem;
      bottom: 0rem;
-     max-height: 32rem;
+     max-height: 29rem;
  }
  #dayBox {
    text-align: center;
@@ -293,7 +293,7 @@ font-family: 'Montserrat', sans-serif;
      position: absolute;
      right: -3rem;
      bottom: 0rem;
-     max-height: 32rem;
+     max-height: 29rem;
  }
  #dayBox {
    text-align: center;
@@ -564,7 +564,7 @@ button:focus{
     bottom: 0rem;
     text-align: center;
     font-size: 3rem!important;
-    max-height: 32rem;
+    max-height: 29rem;
   }
 
   .domSpc{
