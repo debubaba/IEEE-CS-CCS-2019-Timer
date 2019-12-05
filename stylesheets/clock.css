@@ -2,8 +2,8 @@ body{
   font-family: sans-serif;
   font-weight: 100;
   position: fixed;
-   overflow-y: hidden;
-   overflow-x: hidden;
+   /* overflow-y: hidden; */
+   /* overflow-x: hidden; */
    width: 100%;
 
    font-family: 'Raleway', sans-serif;
@@ -15,50 +15,59 @@ h1{
 }
 
 /* For Mobiles */
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 780px) {
   .clockContain{
-    height: 12rem;
+    /* height: 12rem; */
+    height: 50vh;
+  }
+  #clockText{
+    margin-top:10vh;
+    text-align:center;
   }
   #clockText h2{
     font-weight: 200;
     font-size: 3rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem;
     margin-bottom: 16px;
-    margin-top: -1.2rem;
+    margin-top: -1.2rem; */
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    padding-top:2rem;
+    /* padding-top:2rem; */
     }
 
   #clockText h3{
     font-weight: 100;
     font-size: 2rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     font-family: 'Raleway', sans-serif;
     text-align: center;
   }
   #clockdiv{
      font-family: sans-serif;
      color: black;
-     display: inline-block;
+     /* display: inline-block; */
      font-weight: 100;
      text-align: center;
      background: rgba(255, 255, 255, 0.2);
      font-size: 3rem;
-     position: absolute;
+     /* position: absolute;
      bottom: 0rem;
      right: -2rem;
-     overflow: visible;
+     overflow: visible; */
+     width: 100%;
+     height:100%;
  }
 
  #dayBox {
    text-align: center;
    background-color: #000000!important;
    color: #ffffff!important;
-   margin-left: -25px;
-   margin-right: -12px;
+   /* margin-left: -25px;
+   margin-right: -12px; */
    width: 50%;
-   height: 100%;
+   padding:5%;
+   height: 50%;
+   float: left;
  }
 
  #hourBox {
@@ -66,16 +75,18 @@ h1{
      background-color: #fc9003!important;
    color: #000000!important;
    width: 50%;
-   height: 100%;
+   height: 50%;
+   float: left;
+   padding:5%;
  }
  #minuteBox {
    text-align: center;
    background-color: #000000!important;
    color: #ffffff!important;
-   margin-left: -25px;
-   margin-right: -12px;
    width: 50%;
-   height: 100%;
+   height: 50%;
+   float: left;
+   padding:5%;
  }
 
  #secondBox {
@@ -83,23 +94,30 @@ h1{
      background-color: #fc9003!important;
    color: #000000!important;
    width: 50%;
-   height: 100%;
+   height: 50%;
+   float: left;
+   padding:5%;
  }
-
+#one{
+  padding:0 !important;
+}
 .timeNo{
-  font-size: 8rem;
+  font-size: 6rem;
 }
 .smalltext{
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
-
+.tagline{
+  text-align: center;
+  font-family: Montserrat;
+}
 #logo {
-  height: 75%;
-  margin: auto;
+  /* height: 100px; */
+  margin-left:4%;
   float: left;
-  height: 4rem;
-  margin-top: 2rem;
+  height: 6em;
+  /* margin-top: 1em; */
 }
 
 }
@@ -141,6 +159,15 @@ h1{
  }
 } */
 /* For Tablets */
+
+
+/* ================================================================================================ */
+
+/* For Tablets */
+
+/* #clockText{
+  width:100% !important;
+}
 @media screen and (min-width: 560px) and (max-width: 780px) {
   .clockContain{
     height: auto;
@@ -253,17 +280,25 @@ font-family: 'Montserrat', sans-serif;
    margin-top: 2rem;
  }
 
-}
+} */
+
+/* ========================================================================================================= */
+
 /* For Laptops */
 @media screen and (min-width: 780px) {
   .clockContain{
-    height: auto;
-    padding-top: 1rem;
-    width: 53%;
+    /* height: auto; */
+    /* padding-top: 1rem; */
+    /* width: 53%; */
   }
 
+  .logoContain{
+    text-align: center;
+  }
 
   #clockText{
+    margin-top: 9vh;
+    margin-left:5%;
     border-left: solid 10px orange;
   }
   #clockText h2{
@@ -283,31 +318,35 @@ font-family: 'Montserrat', sans-serif;
   }
 
   #clockdiv{
-     font-family: sans-serif;
-     color: black;
-     display: inline-block;
-     font-weight: 100;
-     text-align: center;
-     background: rgba(255, 255, 255, 0.2);
-     font-size: 3rem;
-     width: 51%;
-     position: absolute;
-     right: -3rem;
-     bottom: 0rem;
-     max-height: 29rem;
+    width: 50%;
+    /* height: 42.4%; */
+    height:100%;
+    background-color: black;
+    color: white;
+    float: left;
+    padding: 5%;
+    
+   background-color: #fc9003!important;
+    /* position: absolute; */
+    /* left: -0.5rem; */
+    /* bottom: 0rem; */
+    text-align: center;
+    font-size: 3rem!important;
+    /* max-height: 29rem; */
  }
  #dayBox {
    text-align: center;
    background-color: #fc9003!important;
    color: #ffffff!important;
-   margin-left: -25px;
-   margin-right: -15px;
+   /* margin-left: -25px;
+   margin-right: -15px; */
+   float: left;
    width: 50%;
-   height: 100%;
-   padding-top: 6.8rem;
-   padding-left: 11rem;
+   height: 50%;
+   padding-top: 4%;
+   /* padding-left: 11rem;
    padding-right: 0rem;
-   padding-bottom: 0rem;
+   padding-bottom: 0rem; */
  }
 
  #hourBox {
@@ -315,25 +354,30 @@ font-family: 'Montserrat', sans-serif;
      background-color: #fc9003!important;
    color: #000000!important;
    width: 50%;
-   height: 100%;
-   padding-top: 6.8rem;
+   height: 50%;
+   float:left;
+   
+   padding-top: 4%;
+   /* padding-top: 6.8rem;
    padding-left: 0rem;
    padding-right: 14rem;
-   padding-bottom: 0rem;
+   padding-bottom: 0rem; */
  }
  #minuteBox {
    text-align: center;
    background-color: #fc9003!important;
    color: #ffffff!important;
-   margin-left: -25px;
-   margin-right: -15px;
+   /* margin-left: -25px;
+   margin-right: -15px; */
    width: 50%;
-   height: 100%;
-
-   padding-top: 0rem;
+   height: 50%;
+  float: left;
+  
+  padding-top: 3%;
+   /* padding-top: 0rem;
    padding-left: 11rem;
    padding-right: 0rem;
-   padding-bottom: 6.2rem;
+   padding-bottom: 6.2rem; */
  }
 
  #secondBox {
@@ -341,16 +385,18 @@ font-family: 'Montserrat', sans-serif;
      background-color: #fc9003!important;
    color: #000000!important;
    width: 50%;
-   height: 100%;
-
-   padding-top: 0rem;
+   height: 50%;
+   float:left;
+   
+   padding-top: 3%;
+   /* padding-top: 0rem;
    padding-left: 0rem;
    padding-right: 14rem;
-   padding-bottom: 6.20rem;
+   padding-bottom: 6.20rem; */
  }
 
  .timeNo{
-   font-size: 4rem;
+   font-size: 4.5rem;
 font-family: 'Montserrat', sans-serif;
  }
  .smalltext{
@@ -360,16 +406,20 @@ font-family: 'Montserrat', sans-serif;
 
 
  #logo {
-   height: 75%;
-   margin: auto;
+   /* height: 100px; */
+   /* margin-left:8%; */
    float: left;
-   height: 4rem;
-   margin-top: 2rem;
+   height: 6em;
+   /* margin-top: 1em; */
  }
+ .tagline{
+   margin-left:5%;
+   font-family: Montserrat;
 
+ }
 }
 
-.timerTag{
+/* .timerTag{
   color: orange;
   font-size: 20px;
   padding-top: 7rem;
@@ -380,7 +430,7 @@ font-family: 'Montserrat', sans-serif;
 #clockdiv > div{
     border-radius: 3px;
     display: inline-block;
-}
+} */
 /* #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
@@ -388,7 +438,7 @@ font-family: 'Montserrat', sans-serif;
     display: inline-block;
 } */
 
-.faq{
+/* .faq{
   background: rgba(3, 3, 3, 0);
   margin-bottom: 6rem;
 }
@@ -415,19 +465,19 @@ font-family: 'Montserrat', sans-serif;
 
 button:focus{
     background:rgba(184,184,184,1);
-}
+} */
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+/* .active, .accordion:hover {
   background-color: #ccc;
 }
 
 .accordion:active{
   background: gray;
-}
+} */
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
+/* .panel {
   padding: 0 18px;
   background-color: black;
   max-height: 0;
@@ -442,10 +492,10 @@ button:focus{
 
 .panel:focus{
   display: block;
-}
+} */
 
-.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+/* .accordion:after {
+  content: '\02795';
   font-size: 13px;
   background-color: rgba(255, 255, 255, 0);
   float: right;
@@ -453,9 +503,9 @@ button:focus{
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796"; 
   background-color: rgba(255, 255, 255, 0)
-}
+} */
 
 /* For Mobiles */
 @media screen and (max-width: 560px) {
@@ -466,7 +516,6 @@ button:focus{
     overflow: visible;
 
   }
-
   .socialIcons a img{
     max-Height: 2rem;
   }
@@ -489,13 +538,13 @@ button:focus{
 }
 
 /*For Mobiles*/
-@media screen and (max-width: 560px){
+@media screen and (max-width: 780px){
   .domains{
     display: none;
   }
 }
 /*ForTablets*/
-@media screen and (min-width: 560px) and (max-width: 780px){
+/* @media screen and (min-width: 560px) and (max-width: 780px){
   .domains{
     width: 53%;
     height: 31.3%;
@@ -551,32 +600,53 @@ button:focus{
           padding-right: 0rem;
           width: fit-content;
         }
-}
+} */
 
 /*For Laptops*/
 @media screen and (min-width: 780px){
   .domains{
-    width: 52%;
-    height: 42.4%;
+    
+  /* background-image: url("../images/grid1.png"); */
+    width: 50%;
+    /* height: 42.4%; */
+    height:100%;
     background-color: black;
     color: white;
-    position: absolute;
-    left: -0.5rem;
-    bottom: 0rem;
+    float: left;
+    /* position: absolute; */
+    /* left: -0.5rem; */
+    /* bottom: 0rem; */
     text-align: center;
     font-size: 3rem!important;
-    max-height: 29rem;
+    /* max-height: 29rem; */
+    padding: 5%;
   }
 
-  .domSpc{
-    height: 15.2rem!important;
- font-family: 'Montserrat', sans-serif;
+  .domains .row{
+    height:50% !important;
+    padding: 0 !important;
+    padding-top: 3% !important;
+    margin:0 !important;
   }
+ 
+  .domSpc{
+    /* height: 15.2rem!important; */
+    height: 50% !important;
+ font-family: 'Montserrat', sans-serif;
+ 
+  }
+  /* .center{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  } */
 
   .domSpc h1{
     margin-top: 0rem;
 
-    font-size: 2.5rem!important;
+    font-size: 2.75rem!important;
   }
 
   .domImg{
@@ -584,7 +654,7 @@ button:focus{
     padding: 2rem;
   }
 
-  #design{
+  /* #design{
     padding-top: 6rem;
     padding-left: 10rem;
   }
@@ -600,5 +670,84 @@ button:focus{
         #documentation{
           padding-bottom: 1rem;
           padding-right: 10rem;
-        }
+        } */
+}
+
+
+
+#one{
+  width: 100% !important;
+  height:50vh;
+  padding-left:20px;
+}
+#two{
+  width: 100% !important;
+  height:50vh;
+}
+.clockContain{
+  background: #000000;
+  width: 100%;
+  /* padding-left:5%; */
+  /* padding-right:5%; */
+  height:100%;
+  
+  /* display: inline-block; */
+}
+.container{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+/* section{
+  margin:auto;
+  width:100% !important;
+} */
+
+
+@media(max-width:992px){
+  .domSpc h1{
+    margin-top: .5rem;
+    font-size: 2.3rem!important;
+  }
+
+  .domains .row{
+    padding-top:0 !important;
+  }
+
+  .domImg{
+    height: 4.5rem;
+    padding: .5rem;
+  }
+}
+
+@media(max-width:560px){
+  #logo {
+    /* height: 100px; */
+    /* margin-left:8%; */
+    /* float: left; */
+    height: 4em;
+    margin-top: .45em;
+  }
+}
+
+@media(max-width:345px){
+  
+  #clockText h2{
+    font-weight: 200;
+    font-size: 2.5rem;
+    /* margin-left: 1rem;
+    margin-bottom: 16px;
+    margin-top: -1.2rem; */
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    /* padding-top:2rem; */
+    }
+
+}
+@media(max-height:770px){
+  #dayBox{
+    padding-top:8%;
+  }
+  #hourBox{
+    padding-top:8%;
+  }
 }
